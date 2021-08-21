@@ -37,9 +37,9 @@
 
                         <p class="fw-bold">Memory</p>
 
-                        <button type="button" class="btn btn-outline-secondary">8GB unified memory</button>
+                        <button onclick="ramOptionChange('eightGbRam')" type="button" class="btn btn-outline-secondary">8GB unified memory</button>
 
-                        <button type="button" class="btn btn-outline-secondary">16GB unified memory</button>
+                        <button onclick="ramOptionChange('sixteenGbRam')"  type="button" class="btn btn-outline-secondary">16GB unified memory</button>
                         
                     </div>
                     <br>
@@ -50,11 +50,11 @@
                         
                         <p class="fw-bold">Storage</p>
 
-                        <button type="button" class="btn btn-outline-secondary">256GB SSD Storage</button>
+                        <button onclick="ssdOptionChange('twoFiveSixSsd')" type="button" class="btn btn-outline-secondary">256GB SSD Storage</button>
 
-                        <button type="button" class="btn btn-outline-secondary">512GB SSD Storage</button>
+                        <button onclick="ssdOptionChange('fiveOneTwoSsd')" type="button" class="btn btn-outline-secondary">512GB SSD Storage</button>
 
-                        <button type="button" class="btn btn-outline-secondary">1TB SSD Storage</button>
+                        <button onclick="ssdOptionChange('oneTbSsd')" type="button" class="btn btn-outline-secondary">1TB SSD Storage</button>
 
                     </div>
                     <br>
@@ -64,9 +64,9 @@
                         
                         <p class="fw-bold">Choose your delivery option</p>
 
-                        <button type="button" class="btn btn-outline-secondary">Friday, Aug 25 Free Prime Delivery</button>
+                        <button onclick="deliveryOptionChange('free')" type="button" class="btn btn-outline-secondary">Friday, Aug 25 Free Prime Delivery</button>
 
-                        <button type="button" class="btn btn-outline-secondary">Friday, Aug 21 Delivery charge $20</button>
+                        <button onclick="deliveryOptionChange('paid')" type="button" class="btn btn-outline-secondary">Friday, Aug 21 Delivery charge $20</button>
 
                     </div>
                     <br>
@@ -74,17 +74,17 @@
 
                     <!-- Calculation Block -->
                     <div>
-                        <p class="fw-bold">Base Price &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp $<span>1299</span> </p>
+                        <p class="fw-bold">Base Price &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp $<span id="basePrice">1299</span> </p>
 
-                        <p class="fw-bold">Extra Memory Cost &nbsp &nbsp &nbsp &nbsp $<span>0</span> </p>
+                        <p class="fw-bold">Extra Memory Cost &nbsp &nbsp &nbsp &nbsp $<span id="ramPrice">0</span> </p>
 
-                        <p class="fw-bold">Extra Storage Cost &nbsp &nbsp &nbsp &nbsp &nbsp $<span>0</span> </p>
+                        <p class="fw-bold">Extra Storage Cost &nbsp &nbsp &nbsp &nbsp &nbsp $<span id="ssdPrice">0</span> </p>
 
-                        <p class="fw-bold">Delivery Charge &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp $<span>0</span> </p>
+                        <p class="fw-bold">Delivery Charge &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp $<span id="deliveryPrice">0</span> </p>
 
                         <hr>
 
-                        <p class="fw-bold">Total Price &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp $<span>1299</span> </p>
+                        <p class="fw-bold">Total Price &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp $<span id="subTotal">1299</span> </p>
                     </div>
 
                     <!-- Bonus Block -->
