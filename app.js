@@ -44,8 +44,17 @@ function totalPrice(){
     const deliveryPrice = parseInt(document.getElementById('deliveryPrice').innerText);
     const totalPrice = basePrice + ramPrice + ssdPrice + deliveryPrice;
     document.getElementById('subTotal').innerText = totalPrice;
+    document.getElementById('bonusTotal').innerText = totalPrice;  
+}
 
-    
+function applyPromo(){
+    const promo = document.getElementById('promoInput').value;
+    document.getElementById('promoInput').value = '';
+    if(promo == 'stevekaku'){
+        let discount = parseFloat(document.getElementById('bonusTotal').innerText);
+        discount = discount - (discount * .2);
+        document.getElementById('bonusTotal').innerText = discount;
+    }
 }
 
 
