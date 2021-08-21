@@ -14,14 +14,14 @@
 </head>
 <body>
     <main>
-        <section class="container m-5 p-5">
+        <section class="container p-4">
             <div class="row">
                 <!-- Image Block -->
                 <div class="col-md-6">
                     <img class="img-fluid" src="mac.png" alt="">
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 ">
                     <!-- Info Block -->
                    <div>
 
@@ -37,9 +37,9 @@
 
                         <p class="fw-bold">Memory</p>
 
-                        <button onclick="ramOptionChange('eightGbRam')" type="button" class="btn btn-outline-secondary">8GB unified memory</button>
+                        <button onclick="optionChange('eightGbRam')" type="button" class="btn btn-outline-secondary">8GB unified memory</button>
 
-                        <button onclick="ramOptionChange('sixteenGbRam')"  type="button" class="btn btn-outline-secondary">16GB unified memory</button>
+                        <button onclick="optionChange('sixteenGbRam')"  type="button" class="btn btn-outline-secondary">16GB unified memory</button>
                         
                     </div>
                     <br>
@@ -50,11 +50,11 @@
                         
                         <p class="fw-bold">Storage</p>
 
-                        <button onclick="ssdOptionChange('twoFiveSixSsd')" type="button" class="btn btn-outline-secondary">256GB SSD Storage</button>
+                        <button onclick="optionChange('twoFiveSixSsd')" type="button" class="btn btn-outline-secondary">256GB SSD Storage</button>
 
-                        <button onclick="ssdOptionChange('fiveOneTwoSsd')" type="button" class="btn btn-outline-secondary">512GB SSD Storage</button>
+                        <button onclick="optionChange('fiveOneTwoSsd')" type="button" class="btn btn-outline-secondary">512GB SSD Storage</button>
 
-                        <button onclick="ssdOptionChange('oneTbSsd')" type="button" class="btn btn-outline-secondary">1TB SSD Storage</button>
+                        <button onclick="optionChange('oneTbSsd')" type="button" class="btn btn-outline-secondary">1TB SSD Storage</button>
 
                     </div>
                     <br>
@@ -64,16 +64,16 @@
                         
                         <p class="fw-bold">Choose your delivery option</p>
 
-                        <button onclick="deliveryOptionChange('free')" type="button" class="btn btn-outline-secondary">Friday, Aug 25 Free Prime Delivery</button>
+                        <button onclick="optionChange('freeDelivery')" type="button" class="btn btn-outline-secondary">Friday, Aug 25 Free Prime Delivery</button>
 
-                        <button onclick="deliveryOptionChange('paid')" type="button" class="btn btn-outline-secondary">Friday, Aug 21 Delivery charge $20</button>
+                        <button onclick="optionChange('paidDelivery')" type="button" class="btn btn-outline-secondary">Friday, Aug 21 Delivery charge $20</button>
 
                     </div>
                     <br>
                     <br>
 
                     <!-- Calculation Block -->
-                    <div>
+                    <div class="w-50">
                         <p class="fw-bold">Base Price &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp $<span id="basePrice">1299</span> </p>
 
                         <p class="fw-bold">Extra Memory Cost &nbsp &nbsp &nbsp &nbsp $<span id="ramPrice">0</span> </p>
@@ -89,7 +89,7 @@
 
                     <!-- Bonus Block -->
                     <div>
-                        <p>Add promo code</p>
+                        <p class="fw-bold">Add promo code</p>
                         
                         <input id="promoInput" class="form-control w-50 d-inline" type="text" name="" id="">
 
@@ -97,11 +97,13 @@
 
                         <hr>
 
-                        <h2>Total: $<span id="bonusTotal">1299</spa></h2>
+                        
                     </div>
 
                 </div> 
             </div>
+            <hr>
+            <h2 class="text-center">Total: $<span id="promoAmount">1299</spa></h2>
 
         </section>
     </main>
