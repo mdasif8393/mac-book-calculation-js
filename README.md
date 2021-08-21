@@ -1,2 +1,1 @@
-# mac-book-pro-mdasif8393
-# mac-book-pro-mdasif8393
+# https://mac-calculation.netlify.app/
